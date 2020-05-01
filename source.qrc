@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>source/close.png</file>
+        <file>source/create.png</file>
+        <file>source/fing.png</file>
+        <file>source/open.png</file>
+        <file>source/save.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>source/annuler.png</file>
+        <file>source/copier.png</file>
+        <file>source/couper.png</file>
+        <file>source/sauvegarder sous.png</file>
+        <file>source/Paste.png</file>
+        <file>source/delete.png</file>
+    </qresource>
+</RCC>

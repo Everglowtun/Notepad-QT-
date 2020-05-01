@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>64</y>
+      <width>781</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>782</width>
+      <height>16777215</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>481</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="teste">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affiche</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ouv">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ouvrir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parcours:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_f">
+    <property name="title">
+     <string>Ficher(&amp;f)</string>
+    </property>
+    <addaction name="actioncreate"/>
+    <addaction name="actionopen_o"/>
+    <addaction name="actionclose_c"/>
+    <addaction name="actionsave_s"/>
+    <addaction name="actionfind_f"/>
+    <addaction name="actionSauvegarder_Sous_a"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition_e">
+    <property name="title">
+     <string>Edition(&amp;e)</string>
+    </property>
+    <addaction name="actionCouper_x"/>
+    <addaction name="actionCopier_v"/>
+    <addaction name="actionAnuler_z"/>
+    <addaction name="actionPaster"/>
+    <addaction name="actionSupprimer_d"/>
+   </widget>
+   <addaction name="menu_f"/>
+   <addaction name="menuEdition_e"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actioncreate"/>
+   <addaction name="separator"/>
+   <addaction name="actionAnuler_z"/>
+   <addaction name="actionsave_s"/>
+   <addaction name="separator"/>
+   <addaction name="actionSauvegarder_Sous_a"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopier_v"/>
+   <addaction name="separator"/>
+   <addaction name="actionPaster"/>
+   <addaction name="separator"/>
+   <addaction name="actionSupprimer_d"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actioncreate">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/new/prefix1/source/create.png</normaloff>:/new/prefix1/source/create.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau(&amp;n)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen_o">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/new/prefix1/source/open.png</normaloff>:/new/prefix1/source/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir(&amp;o)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionfind_f">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/new/prefix1/source/fing.png</normaloff>:/new/prefix1/source/fing.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher(&amp;d)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionclose_c">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/new/prefix1/source/close.png</normaloff>:/new/prefix1/source/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fermer(&amp;c)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionsave_s">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/new/prefix1/source/save.png</normaloff>:/new/prefix1/source/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder(&amp;s)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder_Sous_a">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/sauvegarder sous.png</normaloff>:/source/sauvegarder sous.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder Sous(&amp;a)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionCouper_x">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/couper.png</normaloff>:/source/couper.png</iconset>
+   </property>
+   <property name="text">
+    <string>Couper(&amp;x)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopier_v">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/copier.png</normaloff>:/source/copier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copier(&amp;c)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionAnuler_z">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/annuler.png</normaloff>:/source/annuler.png</iconset>
+   </property>
+   <property name="text">
+    <string>Anuler(&amp;z)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionPaster">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/Paste.png</normaloff>:/source/Paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Coller(v)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+   <property name="toolTip">
+    <string>bar</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_d">
+   <property name="icon">
+    <iconset resource="source.qrc">
+     <normaloff>:/source/delete.png</normaloff>:/source/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer(&amp;d)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
